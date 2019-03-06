@@ -4,13 +4,13 @@ var app = new Vue({
     message: "Hello Guys!",
     hello: "I am gonna show you guys the power of Vue !",
     life: ["Life", "Is", "Short", "You", "Have to learn how to code :)"],
-    ApiLife: []
+    products: []
   },
   created() {
     fetch("http://api.myjson.com/bins/74l63")
       .then(Response => Response.json())
       .then(json => {
-        this.ApiLife = json.products;
+        this.products = json.products;
       });
   }
 });

@@ -22,11 +22,27 @@
             </ul>
         </div>
         <div>
+            <h3> This the api response </h3>
             <ul>
-                <li v-for="day in ApiLife">
-                    {{ day }}
+                <li v-for="product in products">
+                    {{ product }}
                 </li>
             </ul>
+        </div>
+        <div>
+            <h3> This is how to be good and nice to read ! </h3>
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Quantity</th>
+                    <th>Name</th>
+                </tr>
+                <tr v-for="product in products">
+                    <th>{{ product.id }}</th>
+                    <th>{{ product.quantity }}</th>
+                    <th>{{ product.name }}</th>
+                </tr>
+            </table>
         </div>
     </div>
     <script src="index.js"></script>
