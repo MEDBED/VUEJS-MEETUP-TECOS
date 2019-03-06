@@ -6,43 +6,59 @@
 </head>
 
 <body>
-
     <div id="app">
-        <div class="header">
-            <h1>{{ message }}</h1>
+        <div class="w3-container w3-green">
+            <div width="100%">
+                <div width="40%">
+                    <img src="logo.png" align="right" class="logo">
+                </div>
+                <div width="60%">
+                    <h1>Building your first quick app with VUE JS Demo</h1>
+                    <p>VUE JS MeetUp By Mohamed BOUHAMED!</p>
+                </div>
+            </div>
         </div>
-        <div>
-            <h3>{{ hello }}</h3>
-        </div>
-        <div>
-            <ul>
-                <li v-for="day in life">
-                    {{ day }}
-                </li>
-            </ul>
-        </div>
-        <div>
-            <h3> This the api response </h3>
-            <ul>
-                <li v-for="product in products">
-                    {{ product }}
-                </li>
-            </ul>
-        </div>
-        <div>
-            <h3> This is how to be good and nice to read ! </h3>
-            <table>
-                <tr>
-                    <th>ID</th>
-                    <th>Quantity</th>
-                    <th>Name</th>
-                </tr>
-                <tr v-for="product in products">
-                    <th>{{ product.id }}</th>
-                    <th>{{ product.quantity }}</th>
-                    <th>{{ product.name }}</th>
-                </tr>
-            </table>
+
+        <div class="w3-row-padding">
+
+            <div class="bodyHeader">
+                <h1>{{ message }}</h1>
+            </div>
+            <div class="bodyHeader">
+                <h3>{{ hello }}</h3>
+            </div>
+            <div class="w3-third">
+                <h3> Enjoy your life ! </h3>
+                <ul>
+                    <li v-for="day in life">
+                        {{ day }}
+                    </li>
+                </ul>
+            </div>
+            <div class="w3-third">
+                <h3> This the api response </h3>
+                <ul>
+                    <li v-for="product in products">
+                        {{ product }}
+                    </li>
+                </ul>
+            </div>
+            <div class="w3-third">
+                <h3> This is how to be good and nice to read ! </h3>
+                <table>
+                    <tr>
+                        <th>ID</th>
+                        <th>Quantity</th>
+                        <th>Name</th>
+                    </tr>
+                    <tr v-for="product in products">
+                        <th>{{ product.id }}</th>
+                        <th>{{ product.quantity }}</th>
+                        <th>{{ product.name }}</th>
+                    </tr>
+                </table>
+            </div>
+
         </div>
     </div>
     <script src="index.js"></script>
