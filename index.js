@@ -1,8 +1,8 @@
 var app = new Vue({
   el: "#app",
   data: {
-    message: "Hello Guys!",
-    hello: "I am gonna show you guys the power of Vue !",
+    header: "Building your first quick app with VUE JS",
+    copyRight: "VUE JS MeetUp By Mohamed BOUHAMED !",
     life: ["Life", "Is", "Short", "You", "Have to learn how to code :)"],
     products: []
   },
